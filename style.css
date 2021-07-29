@@ -6,7 +6,6 @@ body {
   width: 800px;
   margin: 2px auto;
   background-color: rgb(248, 206, 90);
-  padding: 0 5px 5px 5px;
   border: 1px solid black;
 }
 
@@ -24,4 +23,15 @@ p {
   margin: 0 auto;
   text-align: justify;
   padding-bottom: 25px;
+}
+
+a {
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(132, 0, 255);
+  text-decoration: underline;
 }
