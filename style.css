@@ -31,10 +31,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: rgb(132, 0, 255);
+a:hover.email {
+  color: rgb(112, 0, 218);
   text-decoration: underline;
 }
-a:visited {
-  color: blueviolet;
+a:visited.email {
+  color: rgb(56, 0, 109);
 }
