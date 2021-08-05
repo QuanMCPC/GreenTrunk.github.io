@@ -1,17 +1,20 @@
 html {
-  background-color: rgba(253, 244, 220, 0.986);
+  background-color: beige;
 }
-body {
+article {
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(48, 48, 25);
   max-width: 700px;
   margin: 2px auto;
   background-color: rgb(248, 206, 90);
   border: 1px solid black;
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
 
+main {
+  padding-top: 20px;
+}
 h1 {
   font-size: 32px;
   font-weight: normal;
@@ -29,15 +32,35 @@ p {
   padding-bottom: 15px;
 }
 
-a {
+a.contact {
   color: rgb(7, 7, 167);
   text-decoration: none;
 }
 
-a:hover {
+a:hover.contact {
   color: rgb(112, 0, 218);
   text-decoration: underline;
 }
-a:visited {
-  color: rgba(255, 29, 244, 0.815);
+a:visited.contact {
+  color: rgba(201, 113, 196, 0.815);
+}
+
+header {
+  padding: 3px;
+  background-color: rgba(247, 187, 56, 0.445);
+  border: 1px solid rgba(75, 43, 2, 0.425);
+}
+span.navitem,
+span.navitemHome {
+  font-size: 20px;
+  margin: 40px;
+  font-family: "Inconsolata", monospace;
+}
+a.homeanchor {
+  text-decoration: none;
+  color: green;
+}
+a.articlesnav {
+  text-decoration: none;
+  color: black;
 }
