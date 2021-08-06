@@ -19,6 +19,7 @@ main {
 }
 h1 {
   font-size: 29px;
+  font-family: "Inconsolata", monospace;
   color: rgb(0, 0, 0);
   font-weight: normal;
   padding-top: 10px;
@@ -27,7 +28,7 @@ h1 {
 }
 
 p {
-  max-width: 800px;
+  max-width: 950px;
   font-size: 20px;
   line-height: 1.5;
   margin: 0 auto;
@@ -80,9 +81,10 @@ footer {
   border: 1px solid rgba(75, 43, 2, 0.425);
   font-family: "Inconsolata", monospace;
 }
-span.copyright {
+a.copyright {
   color: red;
   padding-right: 40px;
+  text-decoration: none;
 }
 span.footitem {
   font-size: 15px;
