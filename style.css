@@ -39,7 +39,6 @@ p {
 a.contact {
   color: rgb(7, 7, 167);
   text-decoration: none;
-  padding-top: 10px;
 }
 
 a:hover.contact {
@@ -67,12 +66,12 @@ nav span {
   word-break: break-all;
 }
 span.navitem {
-  font-size: 20px;
+  font-size: 17px;
   margin: 2px 10px;
   font-family: "Inconsolata", monospace;
 }
 span.navitemHome {
-  font-size: 20px;
+  font-size: 17px;
   margin: 2px 10px;
   font-family: "Inconsolata", monospace;
 }
@@ -85,21 +84,19 @@ a.articlesnav {
   color: black;
 }
 footer {
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(247, 187, 56, 0.445);
   border: 1px solid rgba(75, 43, 2, 0.425);
   font-family: "Inconsolata", monospace;
+  font-size: 17px;
 }
 a.copyright {
   color: red;
-  padding-right: 40px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
-span.footitem {
+span.contact {
   font-size: 15px;
   margin: 10px;
   font-family: "Inconsolata", monospace;
-}
-li {
-  padding-bottom: 12px;
 }
