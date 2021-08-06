@@ -92,11 +92,5 @@ footer {
 }
 a.copyright {
   color: red;
-  padding-bottom: 10px;
   text-decoration: none;
-}
-span.contact {
-  font-size: 15px;
-  margin: 10px;
-  font-family: "Inconsolata", monospace;
 }
