@@ -84,6 +84,10 @@ a.articlesnav {
   text-decoration: none;
   color: black;
 }
+a.articlesnav:hover,
+a.homeanchor:hover {
+  text-decoration: underline;
+}
 footer {
   padding: 25px;
   background-color: rgba(247, 187, 56, 0.445);
