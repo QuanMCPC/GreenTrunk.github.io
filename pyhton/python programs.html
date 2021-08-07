@@ -21,6 +21,13 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Source+Sans+Pro:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"
+    ></script>
     <title>Homepage | Welcome to GreenTrunk</title>
   </head>
   <body>
@@ -49,15 +56,18 @@
         </p>
         <p>
           It uses two basic modules in Python, namely - Time and Random. The most
-          used one in this program is Random Module. It generates random values 
+          used one in this program is Random Module. It generates random values
           for the program to work correctly. This is the reason that even though
           a User can see the code while running it, they can never see the number
           in the code before the program ends and they have lost.
+          The random functions I have used
+          <ul>
+            <li>randrange(x, y)</li>
+            <li></li>
+            <li></li>
+          </ul>
         </p>
         <p style="padding-bottom: 50px">If you like this, please comment me on my Gmail.
-        </p>
-        
-        </p>
         <article class="code">
           <div
             style="
@@ -67,7 +77,8 @@
               padding: 10px;
             "
           >
-            <pre style="align-content: left; font-size: 20px">
+            <pre style="align-content: left; font-size: 20px" class="language-python">
+              <code>
 import random
 import time
 
@@ -190,8 +201,8 @@ You Lost but you can try Again!""")
             print("You Score: {score * chances}\n")
         break
 # End of the File
-  </pre
-            >
+              </code>
+            </pre>
           </div>
         </article>
       </article>
@@ -231,5 +242,6 @@ You Lost but you can try Again!""")
         >
       </section>
     </footer>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>
