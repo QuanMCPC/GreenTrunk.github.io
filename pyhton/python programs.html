@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Source+Sans+Pro:wght@600&display=swap"
       rel="stylesheet"
     />
@@ -33,7 +38,169 @@
       </nav>
     </header>
     <main>
-      <article></article>
+      <article class="text">
+        <h1>Number Guessing Program In Python</h1>
+        <p >
+          This is one of the programs I have made and uploaded on my gist pages.
+          It is basically a complete number guess program which makes you start
+          it yourself. It also gives you hint whether the number you are trying
+          to guess is larger or smaller than the actual answer. This took a long
+          time to make and revise, probably days.
+        </p>
+        <p>
+          It uses two basic modules in Python, namely - Time and Random. The most
+          used one in this program is Random Module. It generates random values 
+          for the program to work correctly. This is the reason that even though
+          a User can see the code while running it, they can never see the number
+          in the code before the program ends and they have lost.
+          The random functions I have used
+          <ul>
+            <li>randrange(x, y)</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </p>
+        <p style="padding-bottom: 50px">If you like this, please comment me on my Gmail.
+        </p>
+        
+        </p>
+        <article class="code">
+          <div
+            style="
+              width: auto;
+              overflow: auto;
+              align-items: left;
+              padding: 10px;
+            "
+          >
+            <pre style="align-content: left; font-size: 20px">
+import random
+import time
+
+# Greeting Message
+print('''
+Welcome to the Number Guessing Game
+Brought to you by NewDev
+Copr. 2021 NewDev
+Type 'help' for Help.
+\n''')
+
+# Main Menu
+program_run = 0
+
+while True:
+    program_run += 1
+    user_inp = input("Enter a command: ").lower()
+    if user_inp == "start":
+        print("Alright, here we go...\n")
+        break
+    if user_inp == "quit":
+        exit()
+        print("Thank You for playing with us. Hope you Enjoyed...")
+    if user_inp == "help":
+        print('''
+________________Help Menu________________
+start - to start the number guessing game
+quit - to exit the program
+feedback - to provide feedback about the game
+\n''')
+        continue
+    if user_inp == "feedback":
+        feedback = input("All your suggestions and compliments are welcome!\nStart here: ")
+        print("\nThanks for your feedback. The Devs will soon look into it...\nNow, you can continue playing...\n")
+        continue
+    if program_run > 10:
+        print("The program was closed due to spamming")
+        exit()
+    else:
+        print("""I don't understand that.
+Type "help" for Help...\n""")
+
+# Number Guessing Game
+
+help = """There are Three Game Modes based on difficulty. You can Type:\n
+Noob Mode: "e"
+Normal Mode: "m"
+Pro Mode: "h"
+God Mode: "hc"
+\n"""
+print(help)
+while True:
+    dif_inp = input("Select Difficulty: ").lower()
+    if dif_inp == "e":
+        chances = 10
+        dif = "Noob"
+        break
+    if dif_inp == "m":
+        chances = 5
+        dif = "Normal"
+        break
+    if dif_inp == "h":
+        chances = 3
+        dif = "Pro"
+        break
+    if dif_inp == "hc":
+        chances = 1
+        dif = "God"
+        break
+    if dif_inp == "help":
+        print(help)
+    else:
+        print("""\nYou didn't enter a Valid Mode
+Type "help" for help\n""")
+        continue
+answer = random.randrange(20, 250)
+floor = answer - (5 + random.randrange(15))
+ceil = answer + (5 + random.randrange(15))
+score = 0
+time.sleep(0.5)
+print(f"""\nA number has been generated between {floor} and {ceil}.
+Type the correct number to WIN!
+Playing on {dif.upper()} Mode with {chances} chances""")
+if dif == "God":
+    while True:
+        hint = answer - random.randrange(5) + random.randrange(5)
+        if answer != hint:
+            print(f"\nThe correct number is very near to {hint}.")
+            break
+        else:
+            continue
+while True:
+    user_guess = input(f"\nGuess the correct number: ")
+    if user_guess != answer:
+        try:
+            user_guess = int(user_guess)
+            if chances != 0:
+                if user_guess > answer:
+                    print("The correct number is less than that...")
+                if user_guess < answer:
+                    print("The correct number is more than that...")
+        except ValueError:
+            if user_guess == "":
+                print(f"You did not enter a value!")
+            else:
+                print(f"Hey! '{user_guess}' is not a valid whole number")
+        chances -= 1
+    if user_guess == answer:
+        print(f"Congratulations! You Guessed the right number in {5 - chances} tries ")
+        print(f"Your Score: {score * chances}!")
+        break
+    if chances > 1:
+        print(f"You have only {chances} chances left... ")
+    if chances == 1:
+        print("Careful! This is your LAST Chance!")
+    if chances == 0:
+        print(f"""\nThe Correct number is {answer}.
+You Lost but you can try Again!""")
+        if score >= 5:
+            print("You Score: {score * chances}\n")
+        break
+# End of the File
+  </pre
+            >
+          </div>
+        </article>
+      </article>
     </main>
     <footer>
       <section>

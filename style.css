@@ -1,8 +1,8 @@
 html {
   background-color: beige;
-  font-size: 20px;
+  font-size: 23px;
 }
-article {
+article.text {
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(48, 35, 25);
   max-width: auto;
@@ -11,6 +11,15 @@ article {
   border: 1px solid rgba(75, 43, 2, 0.425);
   padding: 20px 20px 20px 20px;
   text-align: center;
+}
+
+article.code {
+  font-family: "Roboto Mono", monospace;
+  color: rgb(37, 32, 29);
+  background-color: rgb(224, 220, 213);
+  border: 1px solid rgba(255, 145, 0, 0.836);
+  padding: 20px;
+  text-align: left;
 }
 
 main {
