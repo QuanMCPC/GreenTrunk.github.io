@@ -18,7 +18,7 @@ main {
   padding-bottom: 10px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Inconsolata", monospace;
   color: rgb(0, 0, 0);
   font-weight: normal;
@@ -29,7 +29,7 @@ h1 {
 
 p {
   max-width: 900px;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.5;
   margin: 0 auto;
   text-align: justify;
@@ -50,12 +50,12 @@ a:visited.contact {
 }
 
 header {
-  padding: 20px;
+  padding: 15px;
   background-color: rgba(245, 219, 148, 0.6);
   border: 1px solid rgb(173, 144, 86);
   position: -webkit-sticky;
   position: sticky;
-  top: 8px;
+  top: 0px;
 }
 ul {
   list-style-type: none;
@@ -68,31 +68,28 @@ nav span {
   -ms-word-break: break-all;
   word-break: break-all;
 }
-span.navitem {
-  font-size: 17px;
-  margin: 2px 15px;
-  font-family: "Inconsolata", monospace;
-}
+span.navitem,
 span.navitemHome {
-  font-size: 17px;
-  margin: 2px 15px;
+  font-size: 20px;
+  margin: 10px 50px;
+  margin-left: 5px;
   font-family: "Inconsolata", monospace;
 }
+
 a.homeanchor {
   text-decoration: none;
   color: green;
-  font-size: 20px;
 }
 a.articlesnav {
   text-decoration: none;
   color: black;
 }
 footer {
-  padding: 20px;
+  padding: 25px;
   background-color: rgba(247, 187, 56, 0.445);
   border: 1px solid rgba(75, 43, 2, 0.425);
   font-family: "Inconsolata", monospace;
-  font-size: 18px;
+  font-size: 20px;
 }
 a.copyright {
   color: red;
